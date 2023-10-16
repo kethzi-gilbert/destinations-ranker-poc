@@ -9,49 +9,16 @@ const propertyId = '308596586';
 
 // Imports the Google Analytics Data API client library.
 const { BetaAnalyticsDataClient } = require('@google-analytics/data');
+const {
+  getCountryCitySlugToDestinationMap,
+} = require('./get-countrycityslug-destination-map');
 
 const analyticsDataClient = new BetaAnalyticsDataClient({
   credentials: googleApplicationCredentials,
 });
 
-/*
- * This function retrieves destination data for each product from the product site api and builds a mapping of country/city slugs to their corresponding destination objects.
- * {'united-kingdom/st-andrews/': {
-    name: 'St Andrews',
-    code: 'GB-SAD',
-    description: 'a very nice city',
-    full_slug: 'de/lt/destinations/united-kingdom/st-andrews'
-  },
-  'united-kingdom/eastbourne/': {
-    name: 'eastbourne',
-    code: 'GB-EAS',
-    description: 'Eastbourne ist eine klassische Strandstadt ',
-    full_slug: 'de/upa/destinations/united-kingdom/eastbourne/'
-  },
-  }
- */
-
-const formCountryCitySlugToDestinationMap = async (products, market) => {
-  let slugToDestinationMapping = {};
-
-  for (const eachProduct of products) {
-    const responsedestination = await fetch(
-      `https://rhps-api.martech.eflangtech.com/v2/destinationsStories/${market}/${eachProduct}`
-    );
-    const responsedestinationJSON = await responsedestination.json();
-
-    responsedestinationJSON.forEach((eachDestination) => {
-      const splittedUrl = eachDestination.full_slug
-        .split('/')
-        .filter((each) => !!each); //Need to add this condition cause in the api results some slugs end with a '/' and some don't
-      const countryCitySlug = splittedUrl.slice(-2).join('/') + '/';
-      slugToDestinationMapping[countryCitySlug] = eachDestination;
-    });
-  }
-  return slugToDestinationMapping;
-};
 // Runs a report Google Analytics Report.
-async function getDestinationsRanked(
+async function getDestinationsSortedByPageViews(
   market,
   products = ['lt', 'ils', 'aya', 'upa'],
   startDate = '30daysAgo',
@@ -121,7 +88,7 @@ async function getDestinationsRanked(
       },
     ],
   });
-  let slugToDestinationMapping = await formCountryCitySlugToDestinationMap(
+  let slugToDestinationMapping = await getCountryCitySlugToDestinationMap(
     products,
     market
   );
@@ -171,7 +138,10 @@ async function getDestinationsRanked(
 }
 
 const displayReport = async () => {
-  const response = await getDestinationsRanked('de');
+  const response = await getDestinationsSortedByPageViews('de');
   console.log(JSON.stringify(response));
 };
 displayReport();
+module.exports = {
+  getDestinationsSortedByPageViews,
+};
