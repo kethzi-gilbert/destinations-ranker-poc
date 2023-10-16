@@ -19,5 +19,8 @@
   "dependencies": {
     "@google-analytics/data": "^4.0.1",
     "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "prettier": "3.0.3"
   }
 }

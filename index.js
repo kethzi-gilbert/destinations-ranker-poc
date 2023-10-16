@@ -1,14 +1,14 @@
-const dotenv = require("dotenv");
+const dotenv = require('dotenv');
 dotenv.config();
 
 const googleApplicationCredentials = JSON.parse(
   process.env.GOOGLE_APPLICATION_CREDENTIALS
 );
 
-const propertyId = "308596586";
+const propertyId = '308596586';
 
 // Imports the Google Analytics Data API client library.
-const { BetaAnalyticsDataClient } = require("@google-analytics/data");
+const { BetaAnalyticsDataClient } = require('@google-analytics/data');
 
 const analyticsDataClient = new BetaAnalyticsDataClient({
   credentials: googleApplicationCredentials,
@@ -42,36 +42,34 @@ const formCountryCitySlugToDestinationMap = async (products, market) => {
 
     responsedestinationJSON.forEach((eachDestination) => {
       const splittedUrl = eachDestination.full_slug
-        .split("/")
+        .split('/')
         .filter((each) => !!each); //Need to add this condition cause in the api results some slugs end with a '/' and some don't
-      const countryCitySlug = splittedUrl.slice(-2).join("/") + "/";
+      const countryCitySlug = splittedUrl.slice(-2).join('/') + '/';
       slugToDestinationMapping[countryCitySlug] = eachDestination;
     });
   }
-
-  console.log(slugToDestinationMapping);
   return slugToDestinationMapping;
 };
 // Runs a report Google Analytics Report.
 async function getDestinationsRanked(
   market,
-  products = ["lt", "ils", "aya", "upa"],
-  startDate = "30daysAgo",
-  endDate = "yesterday"
+  products = ['lt', 'ils', 'aya', 'upa'],
+  startDate = '30daysAgo',
+  endDate = 'yesterday'
 ) {
   const upperCaseMarket = market.toUpperCase();
-  const productsFilter = products.join("|");
+  const productsFilter = products.join('|');
 
   const [response] = await analyticsDataClient.runReport({
     property: `properties/${propertyId}`,
     dimensions: [
       {
-        name: "pagePath",
+        name: 'pagePath',
       },
     ],
     metrics: [
       {
-        name: "screenPageViews",
+        name: 'screenPageViews',
       },
     ],
     dateRanges: [
@@ -85,16 +83,16 @@ async function getDestinationsRanked(
         expressions: [
           {
             filter: {
-              fieldName: "pagePath",
+              fieldName: 'pagePath',
               stringFilter: {
-                matchType: "FULL_REGEXP",
+                matchType: 'FULL_REGEXP',
                 value: `/(${productsFilter})/destinations/.*/.*/$`,
               },
             },
           },
           {
             filter: {
-              fieldName: "customEvent:market_code",
+              fieldName: 'customEvent:market_code',
               stringFilter: {
                 value: upperCaseMarket,
               },
@@ -105,9 +103,9 @@ async function getDestinationsRanked(
     },
     metricFilter: {
       filter: {
-        fieldName: "screenPageViews",
+        fieldName: 'screenPageViews',
         numericFilter: {
-          operation: "GREATER_THAN",
+          operation: 'GREATER_THAN',
           value: {
             doubleValue: 1,
           },
@@ -117,7 +115,7 @@ async function getDestinationsRanked(
     orderBys: [
       {
         metric: {
-          metricName: "screenPageViews",
+          metricName: 'screenPageViews',
         },
         desc: true,
       },
@@ -131,13 +129,13 @@ async function getDestinationsRanked(
   const resultWithDestinationData = response.rows
     .map((row) => {
       const slug = row.dimensionValues[0].value;
-      const splittedUrl = slug.split("/");
+      const splittedUrl = slug.split('/');
 
       const countryInSlug = splittedUrl[3];
       const cityInSlug = splittedUrl[4];
       const countryCitySlug = `${countryInSlug}/${cityInSlug}/`;
       const destinationCode = slugToDestinationMapping[countryCitySlug]?.code;
-      const splittedCountryCode = destinationCode?.split("-");
+      const splittedCountryCode = destinationCode?.split('-');
       const cityCode = splittedCountryCode?.[0];
       const countryCode = splittedCountryCode?.[1];
 
@@ -173,7 +171,7 @@ async function getDestinationsRanked(
 }
 
 const displayReport = async () => {
-  const response = await getDestinationsRanked("de");
-  console.log(response);
+  const response = await getDestinationsRanked('de');
+  console.log(JSON.stringify(response));
 };
 displayReport();
