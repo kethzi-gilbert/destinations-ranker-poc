@@ -2,399 +2,399 @@
 [
   {
     "destinationCode": "US-NYC",
-    "pageViews": 8633,
+    "pageViews": 9669,
     "products": ["lt", "ils", "aya", "upa"],
     "cityCode": "US",
     "countryCode": "NYC"
   },
   {
     "destinationCode": "GB-LON",
-    "pageViews": 4632,
+    "pageViews": 8661,
     "products": ["lt", "ils", "aya", "upa"],
     "cityCode": "GB",
     "countryCode": "LON"
   },
   {
+    "destinationCode": "KR-SEL",
+    "pageViews": 5196,
+    "products": ["lt", "ils", "aya", "upa"],
+    "cityCode": "KR",
+    "countryCode": "SEL"
+  },
+  {
     "destinationCode": "MT-MSJ",
-    "pageViews": 4024,
+    "pageViews": 4627,
     "products": ["lt", "ils", "aya", "upa"],
     "cityCode": "MT",
     "countryCode": "MSJ"
   },
   {
     "destinationCode": "US-MIA",
-    "pageViews": 5188,
+    "pageViews": 4022,
     "products": ["lt", "ils", "aya", "upa"],
     "cityCode": "US",
     "countryCode": "MIA"
   },
   {
-    "destinationCode": "KR-SEL",
-    "pageViews": 3778,
-    "products": ["lt", "ils", "aya", "upa"],
-    "cityCode": "KR",
-    "countryCode": "SEL"
-  },
-  {
     "destinationCode": "JP-TYO",
-    "pageViews": 3170,
+    "pageViews": 3765,
     "products": ["lt", "ils", "aya", "upa"],
     "cityCode": "JP",
     "countryCode": "TYO"
   },
   {
-    "destinationCode": "US-HNL",
-    "pageViews": 2410,
-    "products": ["lt", "ils", "aya", "upa"],
-    "cityCode": "US",
-    "countryCode": "HNL"
-  },
-  {
-    "destinationCode": "US-SBA",
-    "pageViews": 3453,
-    "products": ["lt", "ils", "aya", "upa"],
-    "cityCode": "US",
-    "countryCode": "SBA"
-  },
-  {
     "destinationCode": "US-LAX",
-    "pageViews": 2095,
+    "pageViews": 3432,
     "products": ["lt", "ils", "aya", "upa"],
     "cityCode": "US",
     "countryCode": "LAX"
   },
   {
-    "destinationCode": "CR-COS",
-    "pageViews": 2166,
+    "destinationCode": "US-HNL",
+    "pageViews": 3142,
     "products": ["lt", "ils", "aya", "upa"],
-    "cityCode": "CR",
-    "countryCode": "COS"
-  },
-  {
-    "destinationCode": "IE-DUB",
-    "pageViews": 2536,
-    "products": ["lt", "ils", "aya", "upa"],
-    "cityCode": "IE",
-    "countryCode": "DUB"
-  },
-  {
-    "destinationCode": "ES-MAA",
-    "pageViews": 2564,
-    "products": ["lt", "ils", "aya", "upa"],
-    "cityCode": "ES",
-    "countryCode": "MAA"
-  },
-  {
-    "destinationCode": "ES-BAR",
-    "pageViews": 3007,
-    "products": ["lt", "ils", "aya", "upa"],
-    "cityCode": "ES",
-    "countryCode": "BAR"
+    "cityCode": "US",
+    "countryCode": "HNL"
   },
   {
     "destinationCode": "GB-OXF",
-    "pageViews": 2254,
+    "pageViews": 3008,
     "products": ["lt", "ils", "aya", "upa"],
     "cityCode": "GB",
     "countryCode": "OXF"
   },
   {
+    "destinationCode": "ES-BAR",
+    "pageViews": 2591,
+    "products": ["lt", "ils", "aya", "upa"],
+    "cityCode": "ES",
+    "countryCode": "BAR"
+  },
+  {
+    "destinationCode": "ES-MAA",
+    "pageViews": 2568,
+    "products": ["lt", "ils", "aya", "upa"],
+    "cityCode": "ES",
+    "countryCode": "MAA"
+  },
+  {
+    "destinationCode": "US-SBA",
+    "pageViews": 2397,
+    "products": ["lt", "ils", "aya", "upa"],
+    "cityCode": "US",
+    "countryCode": "SBA"
+  },
+  {
     "destinationCode": "FR-PAR",
-    "pageViews": 1601,
+    "pageViews": 2233,
     "products": ["lt", "ils", "aya", "upa"],
     "cityCode": "FR",
     "countryCode": "PAR"
   },
   {
-    "destinationCode": "IT-ROM",
-    "pageViews": 1048,
+    "destinationCode": "IE-DUB",
+    "pageViews": 2182,
     "products": ["lt", "ils", "aya", "upa"],
-    "cityCode": "IT",
-    "countryCode": "ROM"
+    "cityCode": "IE",
+    "countryCode": "DUB"
   },
   {
-    "destinationCode": "GB-OXB",
-    "pageViews": 982,
+    "destinationCode": "CR-COS",
+    "pageViews": 2089,
     "products": ["lt", "ils", "aya", "upa"],
-    "cityCode": "GB",
-    "countryCode": "OXB"
-  },
-  {
-    "destinationCode": "GB-LOK",
-    "pageViews": 928,
-    "products": ["lt", "ils", "aya", "upa"],
-    "cityCode": "GB",
-    "countryCode": "LOK"
-  },
-  {
-    "destinationCode": "FR-STR",
-    "pageViews": 1674,
-    "products": ["lt", "ils", "aya", "upa"],
-    "cityCode": "FR",
-    "countryCode": "STR"
-  },
-  {
-    "destinationCode": "XX-XXX",
-    "pageViews": 1469,
-    "products": ["lt", "ils", "aya", "upa"],
-    "cityCode": "XX",
-    "countryCode": "XXX"
-  },
-  {
-    "destinationCode": "FR-NIC",
-    "pageViews": 851,
-    "products": ["lt", "ils", "aya", "upa"],
-    "cityCode": "FR",
-    "countryCode": "NIC"
-  },
-  {
-    "destinationCode": "MT-SLM",
-    "pageViews": 1729,
-    "products": ["lt", "ils", "aya", "upa"],
-    "cityCode": "MT",
-    "countryCode": "SLM"
+    "cityCode": "CR",
+    "countryCode": "COS"
   },
   {
     "destinationCode": "GB-BOU",
-    "pageViews": 1691,
+    "pageViews": 1737,
     "products": ["lt", "ils", "aya", "upa"],
     "cityCode": "GB",
     "countryCode": "BOU"
   },
   {
     "destinationCode": "AU-SYD",
-    "pageViews": 1641,
+    "pageViews": 1702,
     "products": ["lt", "ils", "aya", "upa"],
     "cityCode": "AU",
     "countryCode": "SYD"
   },
   {
+    "destinationCode": "XX-XXX",
+    "pageViews": 1671,
+    "products": ["lt", "ils", "aya", "upa"],
+    "cityCode": "XX",
+    "countryCode": "XXX"
+  },
+  {
     "destinationCode": "US-SFD",
-    "pageViews": 774,
+    "pageViews": 1645,
     "products": ["lt", "ils", "aya", "upa"],
     "cityCode": "US",
     "countryCode": "SFD"
   },
   {
-    "destinationCode": "GB-BRU",
-    "pageViews": 1214,
+    "destinationCode": "IT-ROM",
+    "pageViews": 1606,
     "products": ["lt", "ils", "aya", "upa"],
-    "cityCode": "GB",
-    "countryCode": "BRU"
-  },
-  {
-    "destinationCode": "ZA-CAP",
-    "pageViews": 1580,
-    "products": ["lt", "ils", "aya", "upa"],
-    "cityCode": "ZA",
-    "countryCode": "CAP"
+    "cityCode": "IT",
+    "countryCode": "ROM"
   },
   {
     "destinationCode": "CA-TOO",
-    "pageViews": 710,
+    "pageViews": 1564,
     "products": ["lt", "ils", "aya", "upa"],
     "cityCode": "CA",
     "countryCode": "TOO"
   },
   {
-    "destinationCode": "GB-CAR",
-    "pageViews": 1381,
-    "products": ["lt", "ils", "aya", "upa"],
-    "cityCode": "GB",
-    "countryCode": "CAR"
-  },
-  {
-    "destinationCode": "GB-CAM",
-    "pageViews": 685,
-    "products": ["lt", "ils", "aya", "upa"],
-    "cityCode": "GB",
-    "countryCode": "CAM"
-  },
-  {
-    "destinationCode": "GB-IOW",
-    "pageViews": 1533,
-    "products": ["lt", "ils", "aya", "upa"],
-    "cityCode": "GB",
-    "countryCode": "IOW"
-  },
-  {
     "destinationCode": "CA-VAN",
-    "pageViews": 577,
+    "pageViews": 1540,
     "products": ["lt", "ils", "aya", "upa"],
     "cityCode": "CA",
     "countryCode": "VAN"
   },
   {
-    "destinationCode": "US-FLA",
-    "pageViews": 1187,
+    "destinationCode": "FR-NIC",
+    "pageViews": 1469,
+    "products": ["lt", "ils", "aya", "upa"],
+    "cityCode": "FR",
+    "countryCode": "NIC"
+  },
+  {
+    "destinationCode": "GB-CAM",
+    "pageViews": 1384,
+    "products": ["lt", "ils", "aya", "upa"],
+    "cityCode": "GB",
+    "countryCode": "CAM"
+  },
+  {
+    "destinationCode": "SG-SIN",
+    "pageViews": 1282,
+    "products": ["lt", "ils", "aya", "upa"],
+    "cityCode": "SG",
+    "countryCode": "SIN"
+  },
+  {
+    "destinationCode": "US-BOI",
+    "pageViews": 1261,
     "products": ["lt", "ils", "aya", "upa"],
     "cityCode": "US",
-    "countryCode": "FLA"
+    "countryCode": "BOI"
+  },
+  {
+    "destinationCode": "ZA-CAP",
+    "pageViews": 1227,
+    "products": ["lt", "ils", "aya", "upa"],
+    "cityCode": "ZA",
+    "countryCode": "CAP"
   },
   {
     "destinationCode": "NZ-AUC",
-    "pageViews": 549,
+    "pageViews": 1179,
     "products": ["lt", "ils", "aya", "upa"],
     "cityCode": "NZ",
     "countryCode": "AUC"
   },
   {
-    "destinationCode": "GB-TOR",
-    "pageViews": 1134,
-    "products": ["lt", "ils", "aya", "upa"],
-    "cityCode": "GB",
-    "countryCode": "TOR"
-  },
-  {
     "destinationCode": "GB-BRI",
-    "pageViews": 1109,
+    "pageViews": 1132,
     "products": ["lt", "ils", "aya", "upa"],
     "cityCode": "GB",
     "countryCode": "BRI"
   },
   {
     "destinationCode": "US-SDC",
-    "pageViews": 520,
+    "pageViews": 1115,
     "products": ["lt", "ils", "aya", "upa"],
     "cityCode": "US",
     "countryCode": "SDC"
   },
   {
-    "destinationCode": "GB-SAD",
-    "pageViews": 774,
+    "destinationCode": "GB-OXB",
+    "pageViews": 1029,
     "products": ["lt", "ils", "aya", "upa"],
     "cityCode": "GB",
-    "countryCode": "SAD"
+    "countryCode": "OXB"
   },
   {
-    "destinationCode": "GB-EAS",
-    "pageViews": 1261,
+    "destinationCode": "GB-LOK",
+    "pageViews": 970,
     "products": ["lt", "ils", "aya", "upa"],
     "cityCode": "GB",
-    "countryCode": "EAS"
+    "countryCode": "LOK"
   },
   {
-    "destinationCode": "US-BOI",
-    "pageViews": 1292,
+    "destinationCode": "FR-STR",
+    "pageViews": 918,
     "products": ["lt", "ils", "aya", "upa"],
-    "cityCode": "US",
-    "countryCode": "BOI"
-  },
-  {
-    "destinationCode": "SG-SIN",
-    "pageViews": 468,
-    "products": ["lt", "ils", "aya", "upa"],
-    "cityCode": "SG",
-    "countryCode": "SIN"
-  },
-  {
-    "destinationCode": "IE-DCU",
-    "pageViews": 874,
-    "products": ["lt", "ils", "aya", "upa"],
-    "cityCode": "IE",
-    "countryCode": "DCU"
+    "cityCode": "FR",
+    "countryCode": "STR"
   },
   {
     "destinationCode": "GB-MAN",
-    "pageViews": 788,
+    "pageViews": 869,
     "products": ["lt", "ils", "aya", "upa"],
     "cityCode": "GB",
     "countryCode": "MAN"
   },
   {
+    "destinationCode": "MT-SLM",
+    "pageViews": 826,
+    "products": ["lt", "ils", "aya", "upa"],
+    "cityCode": "MT",
+    "countryCode": "SLM"
+  },
+  {
     "destinationCode": "CA-VIC",
-    "pageViews": 372,
+    "pageViews": 786,
     "products": ["lt", "ils", "aya", "upa"],
     "cityCode": "CA",
     "countryCode": "VIC"
   },
   {
+    "destinationCode": "GB-EAS",
+    "pageViews": 771,
+    "products": ["lt", "ils", "aya", "upa"],
+    "cityCode": "GB",
+    "countryCode": "EAS"
+  },
+  {
+    "destinationCode": "GB-BRU",
+    "pageViews": 766,
+    "products": ["lt", "ils", "aya", "upa"],
+    "cityCode": "GB",
+    "countryCode": "BRU"
+  },
+  {
+    "destinationCode": "GB-CAR",
+    "pageViews": 717,
+    "products": ["lt", "ils", "aya", "upa"],
+    "cityCode": "GB",
+    "countryCode": "CAR"
+  },
+  {
+    "destinationCode": "GB-IOW",
+    "pageViews": 685,
+    "products": ["lt", "ils", "aya", "upa"],
+    "cityCode": "GB",
+    "countryCode": "IOW"
+  },
+  {
+    "destinationCode": "AU-BRS",
+    "pageViews": 665,
+    "products": ["lt", "ils", "aya", "upa"],
+    "cityCode": "AU",
+    "countryCode": "BRS"
+  },
+  {
+    "destinationCode": "US-SEA",
+    "pageViews": 577,
+    "products": ["lt", "ils", "aya", "upa"],
+    "cityCode": "US",
+    "countryCode": "SEA"
+  },
+  {
+    "destinationCode": "US-FLA",
+    "pageViews": 566,
+    "products": ["lt", "ils", "aya", "upa"],
+    "cityCode": "US",
+    "countryCode": "FLA"
+  },
+  {
+    "destinationCode": "GB-TOR",
+    "pageViews": 548,
+    "products": ["lt", "ils", "aya", "upa"],
+    "cityCode": "GB",
+    "countryCode": "TOR"
+  },
+  {
+    "destinationCode": "GB-SAD",
+    "pageViews": 518,
+    "products": ["lt", "ils", "aya", "upa"],
+    "cityCode": "GB",
+    "countryCode": "SAD"
+  },
+  {
+    "destinationCode": "IE-DCU",
+    "pageViews": 465,
+    "products": ["lt", "ils", "aya", "upa"],
+    "cityCode": "IE",
+    "countryCode": "DCU"
+  },
+  {
+    "destinationCode": "GB-BST",
+    "pageViews": 417,
+    "products": ["lt", "ils", "aya", "upa"],
+    "cityCode": "GB",
+    "countryCode": "BST"
+  },
+  {
     "destinationCode": "IE-DJU",
-    "pageViews": 343,
+    "pageViews": 369,
     "products": ["lt", "ils", "aya", "upa"],
     "cityCode": "IE",
     "countryCode": "DJU"
   },
   {
     "destinationCode": "GB-YOR",
-    "pageViews": 325,
+    "pageViews": 342,
     "products": ["lt", "ils", "aya", "upa"],
     "cityCode": "GB",
     "countryCode": "YOR"
   },
   {
     "destinationCode": "MT-SPB",
-    "pageViews": 669,
+    "pageViews": 327,
     "products": ["lt", "ils", "aya", "upa"],
     "cityCode": "MT",
     "countryCode": "SPB"
   },
   {
-    "destinationCode": "AU-BRS",
-    "pageViews": 416,
-    "products": ["lt", "ils", "aya", "upa"],
-    "cityCode": "AU",
-    "countryCode": "BRS"
-  },
-  {
-    "destinationCode": "GB-BST",
-    "pageViews": 571,
-    "products": ["lt", "ils", "aya", "upa"],
-    "cityCode": "GB",
-    "countryCode": "BST"
-  },
-  {
-    "destinationCode": "US-SEA",
-    "pageViews": 181,
-    "products": ["lt", "ils", "aya", "upa"],
-    "cityCode": "US",
-    "countryCode": "SEA"
-  },
-  {
-    "destinationCode": "CA-CAT",
-    "pageViews": 163,
-    "products": ["lt", "ils", "aya", "upa"],
-    "cityCode": "CA",
-    "countryCode": "CAT"
-  },
-  {
-    "destinationCode": "AU-GDC",
-    "pageViews": 293,
-    "products": ["lt", "ils", "aya", "upa"],
-    "cityCode": "AU",
-    "countryCode": "GDC"
-  },
-  {
     "destinationCode": "AU-PER",
-    "pageViews": 240,
+    "pageViews": 288,
     "products": ["lt", "ils", "aya", "upa"],
     "cityCode": "AU",
     "countryCode": "PER"
   },
   {
     "destinationCode": "SG-SIM",
-    "pageViews": 140,
+    "pageViews": 234,
     "products": ["lt", "ils", "aya", "upa"],
     "cityCode": "SG",
     "countryCode": "SIM"
   },
   {
+    "destinationCode": "CA-CAT",
+    "pageViews": 183,
+    "products": ["lt", "ils", "aya", "upa"],
+    "cityCode": "CA",
+    "countryCode": "CAT"
+  },
+  {
+    "destinationCode": "AU-GDC",
+    "pageViews": 160,
+    "products": ["lt", "ils", "aya", "upa"],
+    "cityCode": "AU",
+    "countryCode": "GDC"
+  },
+  {
     "destinationCode": "IE-CRK",
-    "pageViews": 49,
+    "pageViews": 136,
     "products": ["lt", "ils", "aya", "upa"],
     "cityCode": "IE",
     "countryCode": "CRK"
   },
   {
     "destinationCode": "US-LOB",
-    "pageViews": 8,
+    "pageViews": 50,
     "products": ["lt", "ils", "aya", "upa"],
     "cityCode": "US",
     "countryCode": "LOB"
   },
   {
     "destinationCode": "GB-ROO",
-    "pageViews": 3,
+    "pageViews": 8,
     "products": ["lt", "ils", "aya", "upa"],
     "cityCode": "GB",
     "countryCode": "ROO"

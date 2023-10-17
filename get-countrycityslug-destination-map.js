@@ -15,7 +15,7 @@
   }
  */
 
-export const getCountryCitySlugToDestinationMap = async (products, market) => {
+const getCountryCitySlugToDestinationMap = async (products, market) => {
   let slugToDestinationMapping = {};
 
   for (const eachProduct of products) {
@@ -33,4 +33,8 @@ export const getCountryCitySlugToDestinationMap = async (products, market) => {
     });
   }
   return slugToDestinationMapping;
+};
+
+module.exports = {
+  getCountryCitySlugToDestinationMap,
 };

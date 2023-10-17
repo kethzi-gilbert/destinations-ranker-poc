@@ -132,7 +132,7 @@ async function getDestinationsSortedByPageViews(
 
       return accumulator;
     }, [])
-    .sort((a, b) => (b.pageViews = a.pageViews));
+    .sort((a, b) => b.pageViews - a.pageViews);
 
   return resultDestinations;
 }
