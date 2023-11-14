@@ -9,9 +9,6 @@ const propertyId = '308596586';
 
 // Imports the Google Analytics Data API client library.
 const { BetaAnalyticsDataClient } = require('@google-analytics/data');
-const {
-  getCountryCitySlugToDestinationMap,
-} = require('./get-countrycityslug-destination-map');
 
 const analyticsDataClient = new BetaAnalyticsDataClient({
   credentials: googleApplicationCredentials,
@@ -30,6 +27,7 @@ async function getDestinationsSortedByPageViews(
   const [response] = await analyticsDataClient.runReport({
     property: `properties/${propertyId}`,
     dimensions: [
+      { name: 'customEvent:dest_code' },
       {
         name: 'pagePath',
       },
@@ -50,10 +48,16 @@ async function getDestinationsSortedByPageViews(
         expressions: [
           {
             filter: {
+              fieldName: 'customEvent:dest_code',
+              stringFilter: { matchType: 'FULL_REGEXP', value: '^(.*-.*)$' },
+            },
+          },
+          {
+            filter: {
               fieldName: 'pagePath',
               stringFilter: {
                 matchType: 'FULL_REGEXP',
-                value: `/(${productsFilter})/destinations/.*/.*/$`,
+                value: `/(${productsFilter})(?:/new)?/destinations/.*/.*/$`,
               },
             },
           },
@@ -68,17 +72,6 @@ async function getDestinationsSortedByPageViews(
         ],
       },
     },
-    metricFilter: {
-      filter: {
-        fieldName: 'screenPageViews',
-        numericFilter: {
-          operation: 'GREATER_THAN',
-          value: {
-            doubleValue: 1,
-          },
-        },
-      },
-    },
     orderBys: [
       {
         metric: {
@@ -88,20 +81,10 @@ async function getDestinationsSortedByPageViews(
       },
     ],
   });
-  let slugToDestinationMapping = await getCountryCitySlugToDestinationMap(
-    products,
-    market
-  );
 
   const resultWithDestinationData = response.rows
     .map((row) => {
-      const slug = row.dimensionValues[0].value;
-      const splittedUrl = slug.split('/');
-
-      const countryInSlug = splittedUrl[3];
-      const cityInSlug = splittedUrl[4];
-      const countryCitySlug = `${countryInSlug}/${cityInSlug}/`;
-      const destinationCode = slugToDestinationMapping[countryCitySlug]?.code;
+      const destinationCode = row.dimensionValues[0].value;
       const splittedCountryCode = destinationCode?.split('-');
       const cityCode = splittedCountryCode?.[0];
       const countryCode = splittedCountryCode?.[1];
@@ -115,7 +98,6 @@ async function getDestinationsSortedByPageViews(
       };
     })
     .filter((each) => !!each.destinationCode);
-  if (products.length === 1) return resultWithDestinationData;
 
   //Reduce Array to sum up page views of multiple Products and then sort them
   const resultDestinations = resultWithDestinationData
